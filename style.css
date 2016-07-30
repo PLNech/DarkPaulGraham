@@ -1,0 +1,48 @@
+@-moz-document domain("paulgraham.com") {
+    /* 
+    Name: Dark paulgraham.com
+    Author: PLNech 
+    Based on https://userstyles.org/styles/123343/paulgraham-com
+    */
+    body {
+        background-image: none;
+        background-color: #151515 !important;
+        color: #e5e5e5 !important;  
+    }
+    table[width] { /* Main page layout */
+        max-width: 55em;
+        width: 90% !important;
+    }
+    table[width] > tbody > tr > td { /* Article layout */
+       width: 100% !important;
+       text-align: justify;
+       line-height: 1.8em;
+    }
+  
+    table[width] font { /* Text nodes */
+        font-size: 16px;
+    }
+    a {
+       color: coral;
+    }
+    table {
+       margin: auto;
+       border-right: transparent solid 3em;
+    }
+    img {
+        background-color: #EEE;
+    }
+    table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3) > a:nth-child(1) > img:nth-child(1) { /* Main logo */
+       filter: invert(0.92);       
+    }
+    html body table tbody tr td table {
+        
+    }
+    body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) {
+        width: 5px;
+    }
+    table tbody tr td table tbody tr td font table tbody tr td {
+        background-color: #222 !important;
+    }
+  /*     html body  b */
+}
