@@ -18,7 +18,6 @@
        text-align: justify;
        line-height: 1.8em;
     }
-  
     table[width] font { /* Text nodes */
         font-size: 16px;
     }
@@ -35,14 +34,13 @@
     table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3) > a:nth-child(1) > img:nth-child(1) { /* Main logo */
        filter: invert(0.92);       
     }
-    html body table tbody tr td table {
-        
+
+    body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(3) > table:nth-child(6) { /* Footer links */
+        border: 0 none;
+        max-width: 10em !important;
+        background-color: #151515 !important;
     }
-    body > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) {
-        width: 5px;
-    }
-    table tbody tr td table tbody tr td font table tbody tr td {
+    body table tbody tr td table tbody tr td font table tbody tr td { /* Header & Footer banners */
         background-color: #222 !important;
     }
-  /*     html body  b */
 }
